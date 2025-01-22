@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KTL - Get $500 Off</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-949237784"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "AW-949237784");
+    </script>
   </head>
   <body class="min-h-screen bg-gray-100 flex items-center justify-center p-4">
     <div class="bg-white rounded-lg shadow-lg p-8 w-full max-w-md">
@@ -29,7 +41,10 @@
       </p>
 
       <!-- Form -->
-      <form class="space-y-4">
+      <form
+        class="space-y-4"
+        onsubmit="gtag('event', 'conversion', {'send_to': 'AW-949237784/Z_aeCJTksI4aEJjw0MQD'});"
+      >
         <!-- Name Input -->
         <div>
           <input
@@ -171,5 +186,10 @@
         </button>
       </form>
     </div>
+    <script>
+      gtag("event", "conversion", {
+        send_to: "AW-949237784/Z_aeCJTksI4aEJjw0MQD",
+      });
+    </script>
   </body>
 </html>
