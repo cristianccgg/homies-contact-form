@@ -4,10 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KTL - Get $500 Off</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Ads Configuration -->
+    <!--
     <script
       async
-      src="https://www.googletagmanager.com/gtag/js?id=AW-949237784"
+      src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXXX"
     ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -15,17 +24,26 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-      gtag("config", "AW-949237784");
+      gtag("config", "AW-XXXXXXXXXX");
     </script>
+    -->
   </head>
-  <body class="min-h-screen bg-gray-100 flex items-center justify-center p-4">
-    <div class="bg-white rounded-lg shadow-lg p-8 w-full max-w-md">
+  <body
+    class="min-h-screen flex items-center justify-center"
+    style="
+      background-image: url('https://wondrous-petera67e0e2768.wordpress.com/wp-content/uploads/2025/01/pexels-fwstudio-33348-139306.jpg');
+    "
+  >
+    <div class="min-h-screen absolute inset-0 bg-white opacity-60 z-0"></div>
+    <div class="bg-white rounded-lg shadow-lg p-8 w-full max-w-md z-10">
       <!-- Logo -->
       <div class="flex justify-center mb-6">
-        <div
-          class="w-16 h-16 bg-slate-800 rounded-full flex items-center justify-center"
-        >
-          <span class="text-white font-bold text-xl">KTL</span>
+        <div class="w-32">
+          <img
+            src="https://wondrous-petera67e0e2768.wordpress.com/wp-content/uploads/2025/01/screenshot-2025-01-22-at-10.50.51e280afam.png"
+            alt="Logo"
+            class="h-16 w-auto"
+          />
         </div>
       </div>
 
@@ -33,7 +51,7 @@
       <h1 class="text-3xl font-bold text-center mb-4">GET $500 OFF</h1>
 
       <!-- Description -->
-      <p class="text-center text-gray-600 mb-8">
+      <p class="description text-center text-gray-600 mb-8">
         Fill out the information below, and your dedicated mobile home
         consultant will reach out to you shortly. We'll take the time to
         understand your needs and guide you through a seamless, simplified
@@ -43,7 +61,7 @@
       <!-- Form -->
       <form
         class="space-y-4"
-        onsubmit="gtag('event', 'conversion', {'send_to': 'AW-949237784/Z_aeCJTksI4aEJjw0MQD'});"
+        onsubmit="gtag('event', 'conversion', {'send_to': 'AW-XXXXXXXXXX/XXXXXXXXXXX'});"
       >
         <!-- Name Input -->
         <div>
@@ -78,10 +96,9 @@
             class="w-full px-4 py-2 border border-gray-200 rounded-md appearance-none bg-white focus:outline-none focus:ring-2 focus:ring-slate-800"
           >
             <option value="" disabled selected>- Timeline -</option>
-            <option value="immediate">Immediate</option>
+            <option value="immediately">Immediately</option>
             <option value="1-3months">1-3 Months</option>
-            <option value="3-6months">3-6 Months</option>
-            <option value="6+months">6+ Months</option>
+            <option value="3+ months">3+ Months</option>
           </select>
           <div
             class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"
@@ -107,9 +124,10 @@
             class="w-full px-4 py-2 border border-gray-200 rounded-md appearance-none bg-white focus:outline-none focus:ring-2 focus:ring-slate-800"
           >
             <option value="" disabled selected>- Land Type (optional) -</option>
-            <option value="owned">Owned Land</option>
-            <option value="leased">Leased Land</option>
-            <option value="looking">Looking for Land</option>
+            <option value="own">Own</option>
+            <option value="need to fin">Need to Find</option>
+            <option value="family">Family</option>
+            <option value="other">Other</option>
           </select>
           <div
             class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"
@@ -135,11 +153,10 @@
             class="w-full px-4 py-2 border border-gray-200 rounded-md appearance-none bg-white focus:outline-none focus:ring-2 focus:ring-slate-800"
           >
             <option value="" disabled selected>- Credit Score -</option>
-            <option value="excellent">Excellent (720+)</option>
-            <option value="good">Good (660-719)</option>
-            <option value="fair">Fair (620-659)</option>
-            <option value="poor">Poor (580-619)</option>
-            <option value="bad">Bad (Below 580)</option>
+            <option value="less than 600">Less than 600</option>
+            <option value="fair">Fair (620-639)</option>
+            <option value="good">Good (640-680)</option>
+            <option value="very good">Very Good (681-850)</option>
           </select>
           <div
             class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none"
@@ -186,10 +203,13 @@
         </button>
       </form>
     </div>
+    <!-- Google Ads Event Configuration -->
+    <!--
     <script>
       gtag("event", "conversion", {
-        send_to: "AW-949237784/Z_aeCJTksI4aEJjw0MQD",
+        send_to: "AW-XXXXXXXXXX/XXXXXXXXXXX",
       });
     </script>
+    -->
   </body>
 </html>
